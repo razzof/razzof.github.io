@@ -25,6 +25,7 @@ a {
 .page-header__nav {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .page-header__nav li a:hover {
   color: #82b5d3;
@@ -32,18 +33,16 @@ a {
 .page-header__nav li a {
   margin: 0 auto;
 }
-
 .page-header__nav li {
-	display: block;
-	width: 20vw;
-	padding: 0;
-	margin: 0;
+  display: block;
+  width: 20%;
+  padding: 0;
+  margin: 0;
 }
-
-.page-header__nav li a{
+.page-header__nav li a {
   display: block;
   padding: 21px 0px 21px 0px;
-  width: ;
+  width: 100%;
   text-transform: uppercase;
   color: #000000;
   font-size: 14px;
@@ -89,7 +88,7 @@ a {
 }
 @media screen and (max-width: 970px) {
   .container {
-    min-width: 768px;
+    min-width: 748px;
     max-width: 970px;
   }
   .page-header__logo-img {
@@ -150,11 +149,16 @@ a {
   .button-toggle {
     display: block;
   }
-  .page-header__nav li a{
+  .page-header__nav li a {
     color: #fff;
     background-color: #82b5d3;
     width: 100vw;
     padding: 21px 0px 21px 0px;
+    box-shadow: 1px 1px 1px 1px rgba(1, 1, 1, 0.2);
+    /*ДОЛЖЕН БЫТЬ БОРДЕР СМ МАКЕТ*/
+  }
+  .page-header__nav li a:active {
+    background-color: #74accc;
     /*ДОЛЖЕН БЫТЬ БОРДЕР СМ МАКЕТ*/
   }
   .page-header__nav li a {
