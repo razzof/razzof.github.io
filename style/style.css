@@ -30,8 +30,8 @@ a {
 .page-header__nav li a:hover {
   color: #82b5d3;
 }
-.page-header__nav li a {
-  margin: 0 auto;
+.page-header__nav li a:active {
+  color: #cacaca;
 }
 .page-header__nav li {
   display: block;
@@ -49,10 +49,7 @@ a {
   line-height: 14px;
   font-weight: 700;
   text-align: center;
-}
-.dd {
-  display: block;
-  width: 20vw;
+  margin: 0 auto;
 }
 .page-header__nav li a:nth-child(3) {
   visibility: hidden;
@@ -97,11 +94,6 @@ a {
   }
 }
 @media screen and (max-width: 768px) {
-  .ffff {
-    width: 282px;
-    height: 214px;
-    margin-bottom: -290px;
-  }
   .container {
     min-width: 320px;
     max-width: 768px;
@@ -118,8 +110,19 @@ a {
     width: 105px;
     margin-left: -52px;
   }
+  .page-header__nav li a {
+    color: #fff;
+    background-color: #82b5d3;
+    width: 100vw;
+    padding: 21px 0px 21px 0px;
+    margin: 0px;
+    box-shadow: 1px 1px 1px 1px rgba(1, 1, 1, 0.2);
+  }
   .page-header__nav li a:hover {
     color: #fff;
+  }
+  .page-header__nav li a:active {
+    background-color: #74accc;
   }
   .page-header__nav li a {
     color: #fff;
@@ -148,21 +151,6 @@ a {
   }
   .button-toggle {
     display: block;
-  }
-  .page-header__nav li a {
-    color: #fff;
-    background-color: #82b5d3;
-    width: 100vw;
-    padding: 21px 0px 21px 0px;
-    box-shadow: 1px 1px 1px 1px rgba(1, 1, 1, 0.2);
-    /*ДОЛЖЕН БЫТЬ БОРДЕР СМ МАКЕТ*/
-  }
-  .page-header__nav li a:active {
-    background-color: #74accc;
-    /*ДОЛЖЕН БЫТЬ БОРДЕР СМ МАКЕТ*/
-  }
-  .page-header__nav li a {
-    margin: 0px;
   }
   .button-toggle {
     width: 23px;
@@ -208,10 +196,10 @@ a {
   .header-wrap {
     height: 56px;
   }
-}
-.nav-close {
-  display: flex;
-  flex-direction: column;
+  .nav-close {
+    display: flex;
+    flex-direction: column;
+  }
 }
 @media screen and (min-width: 1200px) {
   .page-header a {
@@ -226,6 +214,38 @@ a {
   }
 }
 /* ------CONTENT В HEADER------ */
+.dic-cont1 {
+  display: flex;
+  justify-content: center;
+  margin-top: -60px;
+}
+.dic-cont1-item1 {
+  border-top: 60px solid transparent;
+  border-left: 35vw solid #fff;
+  border-bottom: 0px solid transparent;
+}
+.dic-cont1-item2 {
+  border-top: 60px solid transparent;
+  border-right: 35vw solid #fff;
+  border-bottom: 0px solid transparent;
+}
+.dic-cont2 {
+  display: flex;
+  justify-content: space-around;
+  margin-top: -30px;
+}
+.dic-cont2-item1 {
+  border-top: 35px solid transparent;
+  border-left: 50vw solid #ffffff;
+  border-bottom: 0px solid transparent;
+}
+.dic-cont2-item2 {
+  width: 0;
+  height: 0;
+  border-top: 35px solid transparent;
+  border-right: 50vw solid #ffffff;
+  border-bottom: 0px solid transparent;
+}
 .header-main-page {
   background-image: url(../img/back-desktop.jpg);
   background-size: cover;
@@ -241,15 +261,9 @@ a {
   max-height: 350px;
   margin-top: 78px;
 }
-@media screen and (max-width: 768px) {
-  .header-main-page {
-    background-image: url(../img/back-mobile.jpg);
-    margin: 0 auto;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 389px;
-  }
+.media-img1 {
+  display: block;
+  width: 20vw;
 }
 @media screen and (max-width: 992px) {
   .header-main-page {
@@ -258,5 +272,63 @@ a {
     background-size: cover;
     background-position: center;
     height: 518px;
+  }
+  .dic-cont1 {
+    display: flex;
+    justify-content: center;
+    margin-top: -60px;
+  }
+  .dic-cont1-item1 {
+    width: 0;
+    height: 0;
+    border-top: 60px solid transparent;
+    border-left: 45vw solid #fff;
+    border-bottom: 0px solid transparent;
+  }
+  .dic-cont1-item2 {
+    width: 0;
+    height: 0;
+    border-top: 60px solid transparent;
+    border-right: 45vw solid #fff;
+    border-bottom: 0px solid transparent;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header-main-page {
+    margin: 0 auto;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 389px;
+  }
+  .media-img2 {
+    width: 282px;
+    height: 214px;
+    margin-bottom: -290px;
+  }
+  .header-main-page img {
+    margin-top: 92px;
+  }
+  .dic-cont1 {
+    display: flex;
+    justify-content: center;
+    margin-top: -30px;
+  }
+  .dic-cont1-item1 {
+    width: 0;
+    height: 0;
+    border-top: 30px solid transparent;
+    border-left: 50vw solid #fff;
+    border-bottom: 0px solid transparent;
+  }
+  .dic-cont1-item2 {
+    width: 0;
+    height: 0;
+    border-top: 30px solid transparent;
+    border-right: 50vw solid #fff;
+    border-bottom: 0px solid transparent;
+  }
+  .dic-cont2 {
+    display: none;
   }
 }
