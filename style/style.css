@@ -1,4 +1,16 @@
 /* ------ГЛОБАЛЬНЫЕ СТИЛИ------- */
+@font-face {
+  font-family: 'PT sans';
+  src: url('../fonts/PTSans-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'PT sans';
+  src: url('../fonts/PTSans-Bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 * {
   margin: 0px;
   padding: 0px;
@@ -219,12 +231,14 @@ a {
   justify-content: center;
   margin-top: -60px;
 }
-.dic-cont1-item1 {
+.dic-cont1:before {
+  content: '';
   border-top: 60px solid transparent;
   border-left: 35vw solid #fff;
   border-bottom: 0px solid transparent;
 }
-.dic-cont1-item2 {
+.dic-cont1:after {
+  content: '';
   border-top: 60px solid transparent;
   border-right: 35vw solid #fff;
   border-bottom: 0px solid transparent;
@@ -234,12 +248,14 @@ a {
   justify-content: space-around;
   margin-top: -30px;
 }
-.dic-cont2-item1 {
+.dic-cont2:before {
+  content: '';
   border-top: 35px solid transparent;
   border-left: 50vw solid #ffffff;
   border-bottom: 0px solid transparent;
 }
-.dic-cont2-item2 {
+.dic-cont2:after {
+  content: '';
   width: 0;
   height: 0;
   border-top: 35px solid transparent;
@@ -278,14 +294,16 @@ a {
     justify-content: center;
     margin-top: -60px;
   }
-  .dic-cont1-item1 {
+  .dic-cont1:before {
+    content: '';
     width: 0;
     height: 0;
     border-top: 60px solid transparent;
     border-left: 45vw solid #fff;
     border-bottom: 0px solid transparent;
   }
-  .dic-cont1-item2 {
+  .dic-cont1:after {
+    content: '';
     width: 0;
     height: 0;
     border-top: 60px solid transparent;
@@ -314,14 +332,16 @@ a {
     justify-content: center;
     margin-top: -30px;
   }
-  .dic-cont1-item1 {
+  .dic-cont1:before {
+    content: '';
     width: 0;
     height: 0;
     border-top: 30px solid transparent;
     border-left: 50vw solid #fff;
     border-bottom: 0px solid transparent;
   }
-  .dic-cont1-item2 {
+  .dic-cont1:after {
+    content: '';
     width: 0;
     height: 0;
     border-top: 30px solid transparent;
