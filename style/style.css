@@ -490,18 +490,22 @@ a {
   .dic-cont3:before {
     content: '';
     border-top: 30px solid transparent;
-    border-left: 50vw solid red;
+    border-left: 50vw solid #82b5d3;
     border-bottom: 0px solid transparent;
   }
   .dic-cont3:after {
     content: '';
     border-top: 30px solid transparent;
-    border-right: 50vw solid red;
+    border-right: 50vw solid #82b5d3;
     border-bottom: 0px solid transparent;
     overflow: hidden;
   }
   .page-main__reasons {
     overflow-x: hidden;
     margin-top: 56px;
+  }
+  .reasons__item1__wrapper {
+    width: 265px;
+    height: 105px;
   }
 }
