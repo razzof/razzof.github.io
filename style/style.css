@@ -257,8 +257,6 @@ a {
 }
 .dic-cont2:after {
   content: '';
-  width: 0;
-  height: 0;
   border-top: 35px solid transparent;
   border-right: 50vw solid #ffffff;
   border-bottom: 0px solid transparent;
@@ -331,13 +329,13 @@ a {
   .dic-cont1 {
     display: flex;
     justify-content: center;
-    margin-top: -30px;
+    margin-top: -25px;
   }
   .dic-cont1:before {
     content: '';
     width: 0;
     height: 0;
-    border-top: 30px solid transparent;
+    border-top: 25px solid transparent;
     border-left: 50vw solid #fff;
     border-bottom: 0px solid transparent;
   }
@@ -345,7 +343,7 @@ a {
     content: '';
     width: 0;
     height: 0;
-    border-top: 30px solid transparent;
+    border-top: 25px solid transparent;
     border-right: 50vw solid #fff;
     border-bottom: 0px solid transparent;
   }
@@ -391,17 +389,18 @@ a {
     margin-top: 25px;
   }
 }
+/*--------REASONS------ */
 .page-main__reasons {
-  overflow-x: hidden;
+  overflow: hidden;
   margin-top: 56px;
 }
-.page-main__reasons__item1 {
+.page-main__reasons__item {
   display: flex;
   justify-content: space-around;
   width: 100vw;
   overflow: hidden;
 }
-.reasons__item1 {
+.reasons__item {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -409,7 +408,7 @@ a {
   width: 30vw;
   height: 256px;
 }
-.reasons__item1 h2 {
+.reasons__item h2 {
   color: #ffffff;
   font-size: 21px;
   font-weight: 700;
@@ -418,7 +417,7 @@ a {
   text-transform: uppercase;
   margin-bottom: 10px;
 }
-.reasons__item1 p {
+.reasons__item p {
   color: #ffffff;
   font-size: 14px;
   font-weight: 400;
@@ -426,10 +425,10 @@ a {
   text-align: center;
   text-transform: uppercase;
 }
-.reasons__item1__wrapper p:nth-child(2) {
+.reasons__item__wrapper p:nth-child(2) {
   margin-bottom: 20px;
 }
-.aa {
+.reasons-img {
   width: 70vw;
   height: 256px;
   background-image: url(../img/photo-city-desc.jpg);
@@ -437,42 +436,97 @@ a {
   background-size: cover;
   background-position: center;
 }
-.reasons__item1__wrapper {
+.reasons__item__wrapper {
   width: 162px;
   height: 161px;
 }
+.reasons-mini-list {
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+}
+.reasons-mini-list li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 33%;
+  height: 330px;
+}
+.reasons-mini-list li img {
+  display: block;
+  margin-top: 61px;
+}
+.reasons-mini-list-text {
+  width: 252px;
+  height: 81px;
+}
+.reasons-mini-list-text h4 {
+  color: #000000;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 27px;
+}
+.reasons-mini-list-text p {
+  color: #333333;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+.reasons__item2 {
+  flex-direction: row-reverse;
+}
+.wrapper__item2 {
+  width: 160px;
+  height: 159px;
+}
+.img__item2 {
+  background-image: url(../img/photo-bridge-desk.jpg);
+}
 @media screen and (max-width: 970px) {
-  .aa {
+  .reasons-img {
     content: '';
     background-image: url(../img/photo-city-tab.jpg);
   }
+  .reasons-mini-list-text {
+    width: 165px;
+    height: 100px;
+  }
+  .img__item2 {
+    background-image: url(../img/photo-bridge-tab.jpg);
+  }
 }
 @media screen and (max-width: 768px) {
-  .page-main__reasons__item1 {
+  .page-main__reasons__item {
     display: flex;
     flex-direction: column;
     width: 100vw;
   }
-  .reasons__item1 {
+  .reasons__item {
     width: 100vw;
-    height: 190px;
+    height: 195px;
   }
-  .aa {
+  .reasons-img {
     content: '';
     background-image: url(../img/photo-city-mob.jpg);
     width: 100vw;
   }
-  .page-main__reasons__item1 {
+  .page-main__reasons__item {
     display: flex;
     flex-direction: column;
     width: 100vw;
     position: relative;
   }
-  .reasons__item1 {
+  .reasons__item {
     width: 100vw;
-    height: 190px;
+    height: 175px;
   }
-  .aa {
+  .reasons-img {
     content: '';
     background-image: url(../img/photo-city-mob.jpg);
     width: 100vw;
@@ -483,29 +537,99 @@ a {
     position: absolute;
     top: 35;
     z-index: 4;
-    margin-top: 15px;
+    margin-top: 30px;
     left: 0;
     overflow: hidden;
   }
   .dic-cont3:before {
     content: '';
-    border-top: 30px solid transparent;
+    border-top: 15px solid transparent;
     border-left: 50vw solid #82b5d3;
     border-bottom: 0px solid transparent;
+    overflow: hidden;
   }
   .dic-cont3:after {
     content: '';
-    border-top: 30px solid transparent;
+    border-top: 15px solid transparent;
     border-right: 50vw solid #82b5d3;
     border-bottom: 0px solid transparent;
     overflow: hidden;
   }
   .page-main__reasons {
-    overflow-x: hidden;
     margin-top: 56px;
   }
-  .reasons__item1__wrapper {
+  .reasons__item {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+  }
+  .reasons__item__wrapper {
     width: 265px;
     height: 105px;
   }
+  .reasons-mini-list {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+  }
+  .reasons-mini-list li {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 210px;
+    height: 92px;
+    margin-bottom: 40px;
+  }
+  .reasons-mini-list li img {
+    display: block;
+    width: 39px;
+    height: 37px;
+    margin-top: 27px;
+    margin-left: 21px;
+  }
+  .reasons-mini-list .reasons-mini-list-text {
+    height: 92px;
+    margin-left: 69px;
+    margin-top: -30px;
+  }
+  .reasons-mini-list .reasons-mini-list-text h4 {
+    color: #000000;
+    font-size: 18px;
+    text-align: left;
+    text-transform: uppercase;
+    margin-top: 0px;
+    margin-bottom: 17px;
+  }
+  .reasons-mini-list .reasons-mini-list-text p {
+    color: #333333;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: left;
+    text-transform: uppercase;
+    margin-top: 0px;
+    display: block;
+    width: 60vw;
+  }
+  .reasons__item2 {
+    margin-top: 25px;
+  }
+  .img__item2 {
+    background-image: url(../img/photo-bridge-mob.jpg);
+  }
+}
+.last-reasons {
+  display: flex;
+  background-color: #efeeef;
+  height: 256px;
+}
+.last-reasons li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33vw;
+}
+.last-reasons__text-wrapper {
+  width: 270px;
+  height: 136px;
 }
